@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 const firstName = "John";
 const lastName = "Doe";
 const favoriteGames = [
@@ -5,6 +7,19 @@ const favoriteGames = [
   "The Last of Us",
   "The Elder Scrolls V: Skyrim",
 ];
+const isActive = true;
+
+const address = {
+  zipcode: "12345",
+  country: "USA",
+};
+
+const myStyle: CSSProperties = {
+  backgroundColor: "red",
+  color: "white",
+  padding: "10px",
+  borderRadius: "5px",
+};
 
 export const MyAwesomeApp = () => {
   return (
@@ -14,6 +29,9 @@ export const MyAwesomeApp = () => {
 
       <p>{favoriteGames.join(", ")}</p>
       <p>{2 + 2}</p>
+      <h3>{isActive ? "Active" : "Inactive"}</h3>
+
+      <p style={myStyle}>{JSON.stringify(address)}</p>
     </>
   );
 };
