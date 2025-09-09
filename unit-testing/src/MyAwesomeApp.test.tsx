@@ -18,4 +18,9 @@ describe("MyAwesomeApp", () => {
     const h2 = screen.getByRole("heading", { level: 2 });
     expect(h2?.innerHTML).toBe("Doe");
   });
+
+  test(' should match snapshot', () => {
+    const { container } = render(<MyAwesomeApp />);
+    expect(container).toMatchSnapshot();
+  });
 });

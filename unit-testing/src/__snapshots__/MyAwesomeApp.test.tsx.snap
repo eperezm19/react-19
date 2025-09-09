@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp >  should match snapshot 1`] = `
+<div>
+  <h1>
+    John
+  </h1>
+  <h2>
+    Doe
+  </h2>
+  <p>
+    The Witcher 3, The Last of Us, The Elder Scrolls V: Skyrim
+  </p>
+  <p>
+    4
+  </p>
+</div>
+`;
