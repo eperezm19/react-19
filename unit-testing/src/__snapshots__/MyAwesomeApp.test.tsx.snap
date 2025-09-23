@@ -14,5 +14,13 @@ exports[`MyAwesomeApp >  should match snapshot 1`] = `
   <p>
     4
   </p>
+  <h3>
+    Active
+  </h3>
+  <p
+    style="background-color: red; color: white; padding: 10px; border-radius: 5px;"
+  >
+    {"zipcode":"12345","country":"USA"}
+  </p>
 </div>
 `;
