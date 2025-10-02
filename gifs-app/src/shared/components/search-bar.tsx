@@ -23,7 +23,7 @@ export default function SearchBar({
   useEffect(() => {
     const timeout = setTimeout(() => {
       onQuery(query);
-    }, 500);
+    }, 700);
 
     return () => {
       clearTimeout(timeout);
