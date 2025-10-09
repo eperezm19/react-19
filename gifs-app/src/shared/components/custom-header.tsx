@@ -1,6 +1,6 @@
 interface CustomHeaderProps {
   title: string;
-  description: string;
+  description?: string;
 }
 
 export default function CustomHeader({
@@ -10,7 +10,7 @@ export default function CustomHeader({
   return (
     <header className="flex flex-col items-center justify-center mt-10">
       <h1 className="text-2xl font-bold">{title}</h1>
-      <p className="text-sm text-gray-500">{description}</p>
+      {description && <p className="text-sm text-gray-500">{description}</p>}
     </header>
   );
 }
